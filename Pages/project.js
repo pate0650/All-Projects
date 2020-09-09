@@ -31,13 +31,12 @@ const project = {
       <div class="col-md-3">
       </div>
     </div>
-        
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <h5>Link</h5>
-               <a href="{{ project.link }}"> </a>
-            </li>
-        </ul>
-        </section>
+    <ul class="list-group list-group-flush" v-for="link in project">
+    <li class="list-group-item">
+        <h5>Link</h5>
+       <a v-bind:href="'/project/'+link.id">{{ project.link }} </a>
+    </li>
+    </ul>
+    </section>
     `
 }

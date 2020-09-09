@@ -33,7 +33,7 @@ const addProject = {
                 <div class="col">
                     <div class="form">
                         <label for="formFirstName">Project Name</label>    
-                        <input type="text" id="formFirstName" class="form-control" v-model=project.firstName>
+                        <input type="text" id="formFirstName" class="form-control" v-model=project.name>
                     </div>
                 </div>
             </div>
